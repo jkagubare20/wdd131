@@ -7,7 +7,6 @@ body {
 }
 
 body nav {
-    
     color: black;
     grid-column: 1 / 4;
 }
@@ -49,31 +48,38 @@ footer {
 }
 
 * {
-	margin: 10px;
-	padding: 5px;
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
 }
 
-.navbar {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
+nav {
 	background-color: black;
 	align-items: center;
 }
-
-.navbar li {
-	flex: 1 1 auto; 
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    align-items: center;
 }
-.navbar a {
+
+nav ul li {
+	flex: 1 0 auto;
+}
+
+
+nav a {
 	display: block;
-	color: #eee;
-	padding: 0.75rem;
-	text-decoration: none;
+	color: #fff;
 	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
 }
 
-.navbar a:hover {
+nav a:hover {
 	font-weight: 500;
-	text-decoration:line-through;
+	text-decoration: overline;
 	text-decoration-color: rgb(255, 38, 0);
 }
