@@ -22,7 +22,7 @@ header {
 main { 
     display: grid;
     max-width: 1200px;
-    margin: 75px;
+    margin:30px 75px;
 }
   
 .cardone {
@@ -31,6 +31,7 @@ main {
     margin: 0 20px 0 0;
     border: 3px solid black;
     border-radius: 10px;
+    
 }
 
 .cardone__content {
@@ -38,8 +39,9 @@ main {
     justify-content: center;
     align-items: center;
 }
+    
   
-.cardtwo{
+.cardtwo {
     background: white;
     grid-column: 3 / 4;
     border: 3px solid black;
@@ -64,7 +66,8 @@ footer {
 
 
 .cardone {
-    padding: 1rem;
+    padding: 1rem 1rem 3rem 1rem;
+    height: fit-content;
 }
 
 .cardone h2 {
