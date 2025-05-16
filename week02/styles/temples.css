@@ -11,7 +11,7 @@ a {
 }
 
 header {
-    background-color: #309898;
+    background-color: #EF9651;
     color: black;
     padding: 1em 1.5em;
     display: flex;
@@ -39,7 +39,7 @@ header nav li {
 
 header nav a {
     color: black;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 0.9em;
     padding: 0.5em 0;
     transition: color 0.3s ease;
@@ -59,16 +59,6 @@ header nav a:hover{
     z-index: 1001;
 }
 
-#menu span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 5px 0;
-    border-radius: 3px;
-    transition: all 0.3s ease-in-out;
-}
-
 main {
     padding: 2em;
     max-width: 1200px;
@@ -79,7 +69,7 @@ main h2 {
     text-align: center;
     margin-bottom: 1.5em;
     font-size: 1.75em;
-    color: #333333;
+    color: black;
     font-weight: normal;
 }
 
@@ -91,7 +81,7 @@ main h2 {
 }
 
 figure {
-    background-color: #ffffff;
+    background-color: white;
     margin: 0;
     flex-grow: 1;
     flex-shrink: 1;
@@ -107,18 +97,18 @@ figure {
 figure img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #cccccc;
+    
     margin-bottom: 0.75em;
 }
 
 figure figcaption {
     font-size: 0.9em;
-    color: #444444;
+    color: black;
     padding: 0.25em 0.5em;
 }
 
 footer {
-    background-color: #309898; 
+    background-color: #EF9651; 
     color: black;
     text-align: center;
     padding: 1.5em 1em;
@@ -137,6 +127,7 @@ footer p {
 }
 
 @media (max-width: 600px) {
+    
     header {
         padding: 0.75em 1em;
     }
@@ -149,7 +140,23 @@ footer p {
 
     #menu {
         display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        background-color: #EF9651;
+        color: #000;
     }
+    
+
+    #menu::before {
+	content: "≡";
+    }
+
+    #menu.show::before {
+	content: "X";
+    }
+
 
     main {
         padding: 1.5em 1em;
