@@ -56,7 +56,7 @@ header nav a:hover{
     cursor: pointer;
     padding: 10px;
     margin: 0;
-    z-index: 1001;
+
 }
 
 main {
@@ -126,7 +126,7 @@ footer p {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     
     header {
         padding: 0.75em 1em;
@@ -134,8 +134,17 @@ footer p {
     header .header-title h1 {
         font-size: 1.4em;
     }
-    header nav {
+     header nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+     header nav.open {
+        display: block;
     }
 
     #menu {
@@ -146,17 +155,8 @@ footer p {
         padding: 0.5rem 0.75rem;
         background-color: #EF9651;
         color: #000;
+        
     }
-    
-
-    #menu::before {
-	content: "≡";
-    }
-
-    #menu.show::before {
-	content: "X";
-    }
-
 
     main {
         padding: 1.5em 1em;
@@ -173,6 +173,46 @@ footer p {
         margin-left: auto;
         margin-right: auto;
     }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    nav {
+        background-color: #EF9651;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav li {
+        margin-left: 0; /* Remove the left margin */
+        display: block; /* Always display the list items */
+    }
+    
+    nav ul a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+
+    nav ul a:hover {
+        color: white;
+        background-color: black;
+    }
+
+
+    #menu.open::before {
+        content: "X";
+    }
+
 }
 
 @media (max-width: 480px) {
