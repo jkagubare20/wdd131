@@ -188,8 +188,8 @@ footer p {
     }
 
     nav li {
-        margin-left: 0; /* Remove the left margin */
-        display: block; /* Always display the list items */
+        margin-left: 0;
+        display: block; 
     }
     
     nav ul a {
