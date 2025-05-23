@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple page about Rwanda.">
+    <meta name="author" content="Jesus Claus Kagubare">
+    <title>Rwanda</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Rwanda</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 620px)" srcset="images/rwanda-small.webp">
+                <img src="images/rwanda-large.jpg" alt="Rwanda" class="hero-image">
+            </picture>
+                <div class="data">
+                    <h2>Data</h2>
+                    <p><strong>Area:</strong> 26,338 km²</p>
+                    <p><strong>Population:</strong> 14,256,567</p>
+                    <p><strong>Capital:</strong> Kigali</p>
+                    <p><strong>Languages:</strong> Kinyarwanda, English</p>
+                    <p><strong>Currency:</strong> Rwandan Franc(RWF)</p>
+                    <p><strong>Time Zone:</strong> CAT</p>
+                    <p><strong>Calling Code:</strong> +250</p>
+                </div>
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <picture>
+                        <source media="(max-width: 620px)" srcset="images/weather-two.svg" width="100">
+                        <img src="">
+                    </picture>
+                    <p class="temp"><strong>Temperature:</strong> 20°C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p class="wind"><strong>Wind:</strong> 5 km/h</p>
+                    <p><strong>Wind Chill:</strong><span id=windchill></span></p>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Jesus Claus Kagubare | Rwanda</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

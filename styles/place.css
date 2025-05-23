@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #205781;
+    --secondary-color: #3A7D44;
+    --text-color: #000;
+    --background-color: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM mono', monospace;
+    background-color: white;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: yellow;
+    padding: 1.5em;
+    position: relative;
+    text-align: center;
+    font-size: 1.3em;
+    border-bottom: 10px solid var(--secondary-color);
+}
+
+
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+strong {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+@media (min-width: 621px) {
+    .hero-image {
+        height: 600px;
+    }
+
+
+    .weather h2::after {
+        content: "⛅";
+        margin-left: 0.5em;
+      
+    }
+
+    .data, .weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+    }
+
+    .data {
+        top: 50px;
+        left: 50px;
+    }
+
+    .weather {
+        bottom: 50px;
+        right: 50px;
+    }
+    
+    .data p, .weather p {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0.25rem 0;
+    }
+
+    .weather h2 {
+        margin: 0;
+        padding: 0.25rem 0;
+    }
+
+    .weather picture {
+        display: none;
+    }
+
+    .data h2, .weather h2 {
+        border-bottom: 2px solid var(--primary-color);
+    }
+}
+
+.weather-icon {
+    display: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5em 1em;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 620px) and (min-width: 200px) {
+    .data, .weather {
+        text-align: center;
+        margin: 20px;
+    }
+
+}
