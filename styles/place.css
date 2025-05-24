@@ -21,11 +21,12 @@ body {
 header {
     background-color: var(--primary-color);
     color: yellow;
-    padding: 1.5em;
+    padding: 1em;
     position: relative;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
     border-bottom: 10px solid var(--secondary-color);
+    font-family: 'space mono', monospace;
 }
 
 
@@ -119,9 +120,18 @@ footer {
 }
 
 @media screen and (max-width: 620px) and (min-width: 200px) {
+
+    .hero-image {
+        border-bottom: 10px solid var(--secondary-color);
+    }
+
     .data, .weather {
         text-align: center;
         margin: 20px;
     }
-
+    
+    .data h2, .weather h2 {
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+    }
 }

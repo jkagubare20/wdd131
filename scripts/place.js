@@ -17,7 +17,7 @@ function calculateWindChill(temperature, windSpeed) {
 
     const windChillC = (windChillF - 32) * 5/9;
 
-    return Math.round(windChillC * 10) / 10; // 1 decimal place
+    return Math.round(windChillC);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -29,16 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const tempText = tempElement.textContent; // "Temperature: 20°C"
         const windText = windElement.textContent; // "Wind: 5 km/h"
         
-        // Extract numbers using regex
+        // Regex
         const temperature = parseFloat(tempText.match(/\d+/)[0]); // Extract 20
         const windSpeed = parseFloat(windText.match(/\d+/)[0]);   // Extract 5
         
         // Calculate windchill
         const windChill = calculateWindChill(temperature, windSpeed);
         
-        // Display the result
+
         const windchillElement = document.getElementById('windchill');
-        if (windchillElement) {
+        if (windchillElement) { 
             windchillElement.textContent = windChill + '°C';
         }
     }
