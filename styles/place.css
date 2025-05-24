@@ -134,4 +134,11 @@ footer {
         margin-bottom: 0.5em;
         margin-top: 1em;
     }
+
+    .data p, .weather p {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        padding: 0.25rem 0;
+    }
 }
