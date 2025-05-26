@@ -1,0 +1,40 @@
+table {
+    margin: 10px  auto;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+}
+
+tr:first-child th {
+	background-color: black;
+	color: white;
+}
+
+
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+td {
+	text-align: center;
+}
+
+
+th {
+	background-color: #333;
+	font-size: larger;
+    color: white;
+}
+
+
+tbody tr:nth-child(odd) {
+	background-color: hsl(0, 0%, 93%, 1);
+}
