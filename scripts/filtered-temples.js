@@ -143,7 +143,9 @@ function createTempleCards(filteredTemples) {
         const image = document.createElement('img');
         image.src = temple.imageUrl; // this is the image URL
         image.alt = `${temple.templeName} Temple`; // alt text for the image
-        image.loading
+        image.loading = 'lazy'; // lazy loading for performance
+        image.width = '300';
+        image.height = '200';
 
         const name = document.createElement('h3');
         name.textContent = temple.templeName;
