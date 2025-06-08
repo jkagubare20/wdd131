@@ -18,7 +18,7 @@
     </header>
     <main>
         <form method="get" action="review.html">
-            <label for="pname">Product Name:</label>
+            <label for="pname">Product Name*</label>
             <select id="pname" name="pname" required>
                 <option value="" disabled selected>Select a product</option>
                 <option value="Product A">Product A</option>
@@ -27,7 +27,7 @@
                 <option value="Product D">Product D</option>
             </select>
             <br><br>
-            <label for="rating">Rating:</label>
+            <label for="rating">Rating*</label>
             <radio name="rating" id="rating" required>
                 <input type="radio" name="rating" value="1"> &star;
                 <input type="radio" name="rating" value="2"> &star;&star;
@@ -36,26 +36,26 @@
                 <input type="radio" name="rating" value="5"> &star;&star;&star;&star;&star;
             </radio>
             <br><br>
-            <label for="date">Date of Installation:</label>
+            <label for="date">Date of Installation*</label>
             <input type="date" name="date" id="date" required>
             <br><br>
-            <label for="checkbox">Useful Features:</label>
+            <label for="checkbox">Which features did you find useful in the product?</label>
             <div class="checkbox-group">
                 <div class="checkbox-item">
                     <input type="checkbox" name="features" value="Feature 1" id="feature1">
-                    <label for="feature1">Feature 1</label>
+                    <p>Durability</p>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" name="features" value="Feature 2" id="feature2">
-                    <label for="feature2">Feature 2</label>
+                    <p>Ease of Use</p>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" name="features" value="Feature 3" id="feature3">
-                    <label for="feature3">Feature 3</label>
+                    <p>Performance</p>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" name="features" value="Feature 4" id="feature4">
-                    <label for="feature4">Feature 4</label>
+                    <p>Design</p>
                 </div>
             </div>
             <br><br>
