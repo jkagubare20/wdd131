@@ -27,20 +27,20 @@
                 <option value="Product D">Product D</option>
             </select>
             <br><br>
-            <label for="rating">Rating*</label>
-            <radio name="rating" id="rating" required>
-                <input type="radio" name="rating" value="1"> &star;
-                <input type="radio" name="rating" value="2"> &star;&star;
-                <input type="radio" name="rating" value="3"> &star;&star;&star;
-                <input type="radio" name="rating" value="4"> &star;&star;&star;&star;
-                <input type="radio" name="rating" value="5"> &star;&star;&star;&star;&star;
-            </radio>
+            <label>Rating*</label>
+            <div class="rating">
+                <input type="radio" name="rating" value="1" required>&star;
+                <input type="radio" name="rating" value="2" required> &star;&star;
+                <input type="radio" name="rating" value="3" required> &star;&star;&star;
+                <input type="radio" name="rating" value="4" required> &star;&star;&star;&star;
+                <input type="radio" name="rating" value="5" required> &star;&star;&star;&star;&star;
+            </div>
             <br><br>
             <label for="date">Date of Installation*</label>
             <input type="date" name="date" id="date" required>
             <br><br>
-            <label for="checkbox">Which features did you find useful in the product?</label>
-            <div class="checkbox-group">
+            <label>Which features did you find useful in the product?</label>
+            <div id="checkbox-group">
                 <div class="checkbox-item">
                     <input type="checkbox" name="features" value="Feature 1" id="feature1">
                     <p>Durability</p>
