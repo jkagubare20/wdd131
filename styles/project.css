@@ -12,9 +12,10 @@ body {
 }
 
 h4 {
-    color: #F0F0F0;
-    padding-top: 50px;
+    color: #FFB319;
     text-align: center;
+    padding-top: 50px;
+    font-size: 1.5em;
 }
 
 a {
@@ -22,8 +23,8 @@ a {
 }
 
 header {
-    background-color: #1E3E62;
-    color: #FF6500;
+    background-color: #0E2954;
+    color: #FFB319;
     padding: 1em 1.5em;
     display: flex;
     justify-content: space-between;
@@ -33,7 +34,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.6em;
+    font-size: 1.9em;
     font-weight: normal;
 }
 
@@ -49,9 +50,9 @@ header nav li {
 }
 
 header nav a {
-    color: #FF6500;
+    color: #FFB319;
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 1em;
     padding: 0.5em 0;
     transition: color 0.3s ease;
 }
@@ -79,9 +80,9 @@ main {
 main h2 {
     text-align: center;
     margin-bottom: 1em;
-    font-size: 1.75em;
-    color: white;
-    font-weight: normal;
+    font-size: 2em;
+    color: #FFB319;
+    font-weight: 500;
 }
 
 .post-container {
@@ -107,25 +108,33 @@ main h2 {
 }
 
 form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto 0;
     padding: 20px;
     border-radius: 8px;
 }
 
-input[type="email"] {
-    width: 320px;
-    padding: 15px;
+input, select {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font: 1em "Outfit", sans-serif;
+    font-size: 1em;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 20px;
+}
+
+input, label {
+    display: block;
+    width: 100%;
 }
 
 input[type="submit"] {
-    background-color: #FF6500;
-    color: white;
+    background-color: #FFB319;
+    color: #000000;
     border: none;
     font: 1em "Outfit", sans-serif;
+    font-weight: 500;
     padding: 15px 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -163,8 +172,8 @@ input[type="submit"]:hover {
         font-weight: 100;
         text-decoration: none;
         padding: 0.5rem 0.75rem;
-        background-color: #578FCA;
-        color: #000;
+        background-color: #0E2954;
+        color: #f0f0f0;
         
     }
 
@@ -184,7 +193,8 @@ input[type="submit"]:hover {
     }
 
     nav {
-        background-color: #578FCA;
+        background-color: #0E2954;
+        
     }
     
     nav ul {
@@ -202,7 +212,7 @@ input[type="submit"]:hover {
         padding: 0.75rem;
         text-align: left;
         text-decoration: none;
-        color: black;
+        color: #FFB319;
         font-weight: 400;
         transition: 0.5s;
         font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -217,23 +227,23 @@ input[type="submit"]:hover {
         content: "X";
     }
 
-    input[type="email"] {
+    input, select {
         width: 100%;
         margin-bottom: 1em;
     }
     input[type="submit"] {
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: 1em; 
     }
 }
 
 footer {
-    background-color: #1E3E62; 
-    color: #FF6500;
+    background-color: #0E2954; 
+    color: #FFB319;
     text-align: center;
     padding: 1.5em 1em;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 
@@ -248,17 +258,26 @@ footer p {
     main {
         padding: 1em 0.5em;
     }
+    input[type="text"][id="fname"] {
+        margin-right: 10px;
+    }
 }
 
 strong {
     font-weight: 600;
-}
-
-p, ul {
-    margin-bottom: 1em;
+    color: #FFB319;
 }
 
 ul {
     list-style-type: disc;
     padding-left: 30px;
+}
+
+input[type="text"] {
+    display: inline-flex;
+    width: calc(48% - 1px);
+}
+
+input[type="text"][id="fname"] {
+  margin-right: 20px;
 }

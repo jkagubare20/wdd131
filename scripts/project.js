@@ -83,7 +83,8 @@ const posts = [
 function createPostCards(filteredPosts) {
     const postCardsContainer = document.querySelector('.post-container');
     
-    postCardsContainer.innerHTML = ''; // Clear previous cards
+    // Clear previous cards
+    postCardsContainer.innerHTML = '';
 
     filteredPosts.forEach(post => {
         const card = document.createElement('div');
@@ -116,4 +117,70 @@ function createPostCards(filteredPosts) {
 
 }
 
-createPostCards(posts);
+document.addEventListener('DOMContentLoaded', () => {
+    createPostCards(posts);
+});
+
+// Topic array
+const topics = [
+  {
+    id: "Books",
+    name: "Books & Ideas",
+  },
+  {
+    id: "Productivity",
+    name: "Productivity",
+  },
+  {
+    id: "Society",
+    name: "Society & Culture",
+  },
+  {
+    id: "Youth",
+    name: "Youth & Purpose",
+  },
+  {
+    id: "All",
+    name: "All Topics",
+  }
+];
+
+function populateTopics() {
+  const topicSelect = document.getElementById("topics");
+  
+  if (!topicSelect) {
+    console.error("Element with id 'topics' not found");
+    return;
+  }
+
+  // Clear existing options except the first placeholder option
+  while (topicSelect.children.length > 1) {
+    topicSelect.removeChild(topicSelect.lastChild);
+  }
+  // Add product options
+  topics.forEach(topic => {
+    const option = document.createElement("option");
+    option.value = topic.id;
+    option.textContent = topic.name;
+    topicSelect.appendChild(option);
+  });
+}
+// Call the function when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+  populateTopics();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("submit");
+
+  form.addEventListener("click", () => {
+    // Get current number of reviews from localStorage
+    let numReviews = Number(localStorage.getItem("numReviews-ls")) || 0;
+    
+    // Increment the counter
+    numReviews++;
+    
+    // Store the updated counter
+    localStorage.setItem("numReviews-ls", numReviews);
+  });
+});

@@ -10,3 +10,8 @@ body {
     color: white;
     line-height: 1.6;
 }
+
+
+p, ul {
+    margin-bottom: 1em;
+}
