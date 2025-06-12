@@ -292,7 +292,7 @@ ul {
 
 input[type="text"] {
     display: inline-flex;
-    width: calc(48% - 1px);
+    width: calc(48% - 0.5px);
 }
 
 input[type="text"][id="fname"] {
