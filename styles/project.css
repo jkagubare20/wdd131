@@ -97,8 +97,7 @@ main h2 {
     padding: 10px;
     width: 300px;
     text-align: start;
-    background-color: rgb(255, 255, 255, 0.8); 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    background-color: rgb(255, 255, 255, 0.9);
 }
 
 .post-card img {

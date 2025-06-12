@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", populateProducts);
 
 // Handle form submission and review counter
 document.addEventListener("DOMContentLoaded", function() {
-  const form = document.querySelector("form");
-  
-  form.addEventListener("submit", function(event) {
+  const form = document.getElementById("submit");
+
+  form.addEventListener("click", () => {
     // Get current number of reviews from localStorage
     let numReviews = Number(localStorage.getItem("numReviews-ls")) || 0;
     
