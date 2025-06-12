@@ -229,6 +229,10 @@ input[type="submit"]:hover {
         content: "X";
     }
 
+    .post-card {
+        background-color: #f0f0f0;
+    }
+
     input, select {
         width: 100%;
         margin-bottom: 1em;
