@@ -121,6 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
     createPostCards(posts);
 });
 
+const contactButton = document.querySelector('.contact-button');
+document.addEventListener('click', () => {
+  window.location.href = 'contact.html';
+
+});
+
 // Topic array
 const topics = [
   {

@@ -97,6 +97,7 @@ main h2 {
     border-radius: 16px;
     padding: 10px;
     width: 300px;
+    margin-bottom: 20px;
     text-align: center;
     color: #000000;
     background-color: lightgray;
@@ -250,6 +251,21 @@ footer {
 
 footer p {
     margin: 0.4em 0;
+}
+
+.contact-button {
+    background-color: #FFB319;
+    color: #000000;
+    border: none;
+    font: 1em "Outfit", sans-serif;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: 0 auto; 
+    display: block;
+    
 }
 
 @media (max-width: 480px) {
