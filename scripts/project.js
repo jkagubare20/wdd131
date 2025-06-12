@@ -93,8 +93,9 @@ function createPostCards(filteredPosts) {
         image.src = post.imageSrc; // this is the image URL
         image.alt = `${post.imageAlt} `; // alt text for the image
         image.loading = 'lazy'; // lazy loading for performance
-        image.width = '300';
-        image.height = '200';
+        image.width = '600';
+        image.height = '402';
+        image.srcset = `${post.imageSrc} 300w, ${post.imageSrc} 400w`; // responsive image sizes
 
         const date = document.createElement('p');
         date.textContent = `${post.date}`;

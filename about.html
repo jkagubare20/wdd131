@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Goal Diggers Blog Page">
+    <meta name="author" content="Jesus Claus Kagubare">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-mini.css">
+
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>About us Page</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Goal Diggers Blog</h1>
+        <button id="menu" title="button"></button>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <h3><strong>Welcome to our corner of the web!</strong></h3>
+        <p>We’re more than just a blog — we’re a growing community of young minds passionate about growth, purpose, and positive change.</p>
+        <p>This platform was created to spark thoughtful conversations, share inspiring stories, and explore real-life issues affecting our generation. Whether it’s navigating faith, confronting social challenges, or diving into the transformative power of books, we’re here to help you think deeper, live better, and connect more meaningfully.</p>
+        <p><strong>What We Write About:</strong></p>
+        <ul>
+            <li><strong>Books & Ideas:</strong> From timeless classics to powerful modern reads, we explore books that open minds and inspire hearts.</li>
+            <li><strong>Society & Culture:</strong> We tackle the challenges our communities face — from youth struggles to social justice and identity.</li>
+            <li><strong>Faith & Values:</strong> Rooted in Christian principles, we offer reflections that encourage spiritual growth, while welcoming respectful dialogue across beliefs.</li>
+            <li><strong>Youth & Purpose:</strong> Whether you’re in school, searching for direction, or building your future, we share practical tools and insights for real life.</li>
+        </ul>
+        <p><strong>Our Mission:</strong></p>
+        <p>To empower Rwandan youth (and young people across Africa) with knowledge, purpose, and community — one post at a time.</p>
+        <p><strong>Our Vision:</strong></p>
+        <p>A generation that reads deeply, thinks critically, believes boldly, and acts compassionately.</p>
+        <h4>Subscribe to our Newsletter:</h4>
+        <form id="subscribe-form" method="get" action="subscribe.html">
+            <input type="email" id="subscribe" name="subscribe" placeholder="Enter your email" required>
+            <input type="submit" value="Subscribe" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jesus Claus Kagubare | Rwanda</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
