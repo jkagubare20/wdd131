@@ -1,4 +1,11 @@
- * {
+:root {
+    --primary-color: #FFB319;
+    --secondary-color: #0E2954;
+    --text-color: #000000;
+    --background-color: #f0f0f0;
+}
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,7 +19,7 @@ body {
 }
 
 h4 {
-    color: #FFB319;
+    color: var(--primary-color);
     text-align: center;
     padding-top: 50px;
     font-size: 1.5em;
@@ -23,8 +30,8 @@ a {
 }
 
 header {
-    background-color: #0E2954;
-    color: #FFB319;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 1em 1.5em;
     display: flex;
     justify-content: space-between;
@@ -50,7 +57,7 @@ header nav li {
 }
 
 header nav a {
-    color: #FFB319;
+    color: var(--primary-color);
     font-weight: 400;
     font-size: 1em;
     padding: 0.5em 0;
@@ -81,7 +88,7 @@ main h2 {
     text-align: center;
     margin-bottom: 1em;
     font-size: 2em;
-    color: #FFB319;
+    color: var(--primary-color);
     font-weight: 500;
 }
 
@@ -99,7 +106,7 @@ main h2 {
     width: 300px;
     margin-bottom: 30px;
     text-align: center;
-    color: #000000;
+    color: var(--text-color);
     background-color: lightgray;
 }
 
@@ -132,8 +139,8 @@ input, label {
 }
 
 input[type="submit"] {
-    background-color: #FFB319;
-    color: #000000;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     border: none;
     font: 1em "Outfit", sans-serif;
     font-weight: 500;
@@ -174,8 +181,8 @@ input[type="submit"]:hover {
         font-weight: 100;
         text-decoration: none;
         padding: 0.5rem 0.75rem;
-        background-color: #0E2954;
-        color: #f0f0f0;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
         
     }
 
@@ -195,7 +202,7 @@ input[type="submit"]:hover {
     }
 
     nav {
-        background-color: #0E2954;
+        background-color: var(--primary-color);
         
     }
     
@@ -214,14 +221,14 @@ input[type="submit"]:hover {
         padding: 0.75rem;
         text-align: left;
         text-decoration: none;
-        color: #FFB319;
+        color: var(--primary-color);
         font-weight: 400;
         transition: 0.5s;
         font-size: clamp(1rem, 2vmin, 1.5rem);
     }
 
     nav ul a:hover {
-        color: white;
+        color: var(--background-color);
     }
 
 
@@ -230,7 +237,7 @@ input[type="submit"]:hover {
     }
 
     .post-card {
-        background-color: #f0f0f0;
+        background-color: var(--background-color);
     }
 
     input, select {
@@ -244,8 +251,8 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background-color: #0E2954; 
-    color: #FFB319;
+    background-color: var(--secondary-color); 
+    color: var(--primary-color);
     text-align: center;
     padding: 1.5em 1em;
     font-size: 1em;
@@ -258,8 +265,8 @@ footer p {
 }
 
 .contact-button {
-    background-color: #FFB319;
-    color: #000000;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     border: none;
     font: 1em "Outfit", sans-serif;
     font-weight: 500;
@@ -285,7 +292,7 @@ footer p {
 
 strong {
     font-weight: 600;
-    color: #FFB319;
+    color: var(--primary-color);
 }
 
 ul {
