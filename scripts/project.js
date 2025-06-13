@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createPostCards(posts);
 });
 
+// Direct to contact page by clicking the contact button
 const contactButton = document.querySelector('.contact-button');
 contactButton.addEventListener('click', () => {
   window.location.href = 'contact.html';
