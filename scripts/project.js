@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const contactButton = document.querySelector('.contact-button');
-document.addEventListener('click', () => {
+contactButton.addEventListener('click', () => {
   window.location.href = 'contact.html';
 
 });
